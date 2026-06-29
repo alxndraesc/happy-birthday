@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Bebi!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Section 1: Landing Page -->
+    <section class="landing" id="landing">
+        <!-- Blurred Circles Background -->
+        <div class="gradient-blob blob-3"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-1"></div>
+
+        <!-- Window Controls -->
+        <div class="window-controls">
+            <div class="control-dot rose"></div>
+            <div class="control-dot mauve"></div>
+            <div class="control-dot soft"></div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="landing-content">
+                <h1 class="hero-text" id="heroText">
+                    <span class="word">Hey,</span>
+                    <span class="word">Siri!</span>
+                    <span class="word">Play</span>
+                </h1>
+                <button class="song-button" id="playButton">
+                    <span>intro, by Ariana Grande</span>
+                </button>
+                <p class="caption" id="caption">click to continue →</p>
+            </div>
+
+        <!-- Hidden Audio Element -->
+        <audio id="backgroundMusic" preload="auto">
+            <source src="intro.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <!-- Section 2: Infinite Photo Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-container">
+            <!-- Row 1: Scrolls Right -->
+            <div class="gallery-row row-1">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <img src="images/IMG1.jpg" alt="Memory 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG2.jpg" alt="Memory 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG3.jpg" alt="Memory 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG4.jpg" alt="Memory 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG5.jpg" alt="Memory 5">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Scrolls Left -->
+            <div class="gallery-row row-2">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <img src="images/IMG6.jpg" alt="Memory 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG7.jpg" alt="Memory 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG8.jpg" alt="Memory 8">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG9.jpg" alt="Memory 9">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG10.jpg" alt="Memory 10">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Scrolls Right -->
+            <div class="gallery-row row-3">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <img src="images/IMG11.jpg" alt="Memory 11">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG12.jpg" alt="Memory 12">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG13.jpg" alt="Memory 13">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG14.jpg" alt="Memory 14">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG15.jpg" alt="Memory 15">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Birthday Message -->
+    <section class="message" id="message">
+        <div class="message-container">
+            <h2 class="birthday-title">Happy Birthday, Bebi!</h2>
+            <p class="birthday-message">
+                (Yes, yes I made another one of these HAHAHAHAHA). I think I have said all words possible on each birthday message I gave for almost 10 years, and I wish that I can be as unique every year. But alas, words can't always go so far. <br><br> It's been 10 years since I met my cheerleader, my food buddy, my bestie, the one up for anything with me. What else do I have to say? Thank you for sticking by me for years, through the misunderstandings, the silence, the noise, all of it, specially the wins. We've both seen each other at our lowest and will continue to cheer on each other to recieve the best of what we planned for us. I admit (and probably you know) I am scared of change but the only change I hope for and embrace, is you grow the best version of you without having to apologize to anyone for choosing what's best for you. <br><br> Continue to go for your dreams, Bebi! You deserve all the things you hope for in this world. I'm here, the one cheering loud and proud, and I'll also be the one who will sit in the silence with you when things go south. Looking forward to more dates, chikas, randomness, and life lessons with you. Love you so much! Always.
+            </p>
+            <div class="signature">
+                ~ kaylaaaaa
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
