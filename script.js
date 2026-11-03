@@ -171,7 +171,7 @@
   function showUpdatePopup() {
     showPopup({
       title: "wona_update.exe", icon: "computer",
-      html: `<h1 class="center">Wona OS ${C.age}.0</h1><p class="center dim">A new version is available.<br>Estimated time: one more year.</p>`,
+      html: `<h1 class="center">Wona ${C.age}.0</h1><p class="center dim">A new version is available.<br>Estimated time: one more year.</p>`,
       buttons: [["Later", refuseDelay], ["Update", startExploring, "pink"]],
       closable: true, onClose: startExploring          // the × works too
     });
