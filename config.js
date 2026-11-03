@@ -45,9 +45,9 @@ const CONFIG = {
   // The arrow buttons change songs; the list under the player is just for show.
   // Optional per song: start: 53, end: 110 (seconds) to play only a clip.
   songs: [
-    { title: "New Romantics",      artist: "Taylor Swift", src: "audio/New_Romantics.mp3" },  // TODO: e.g. "audio/dorothea.mp3"
-    { title: "dorothea", artist: "Taylor Swift",     src: "audio/dorothea.mp3" },  // TODO
-    { title: "Bejeweled", artist: "Taylor Swift",     src: "audio/Bejeweled.mp3" }   // TODO
+    { title: "New Romantics",      artist: "Taylor Swift", src: "audio/New_Romantics.mp3" },
+    {title: "Bejeweled", artist: "Taylor Swift",     src: "audio/Bejeweled.mp3" }, // TODO: e.g. "audio/dorothea.mp3"
+    { title: "dorothea", artist: "Taylor Swift",     src: "audio/dorothea.mp3" }  // TODO
   ],
 
   /* ---------- 5. REMINDERS WIDGET ---------- */
@@ -64,12 +64,12 @@ const CONFIG = {
   // Sprites available: computer camera cd globe clock star trash chat heart folder envelope
   // An icon labeled "Messages" opens the Messages app instead of a little window.
   desktopIcons: [
-    ["computer", "My Wona",          "Nothing here but vibes."],
-    ["camera",   "Instagram",        "400 drafts. To be posted."],
-    ["cd",       "Spotify",          "Spotify wrapped: Most Played Artist, Taylor Swift."],
+    ["computer", "Wona 22.0",          "Wona 22.0 is outdated. Update Now."],
+    ["camera",   "Instagram",        "You were tagged in 230 posts."],
+    ["cd",       "Spotify",          "Spotify wrapped, Most Played Artist: Taylor Swift."],
     ["globe",    "Internet",         "Currently on explore and discovery mode"],
     ["clock",    "Late.exe",         "Late.exe has stopped responding (as usual)."],
-    ["star",     "Taylor's Version", "Eldest Daughter, Never Grow Up, Lover"],
+    ["star",     "Taylor's Version", "Begin Again, Taylor's Version"],
     ["trash",    "Bad Takes",        "Cannot be emptied. There are too many."],
     ["chat",     "Messages",       "No new messages. (Yet.)"]
   ],
