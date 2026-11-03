@@ -10,6 +10,11 @@
    ========================================================================== */
 (() => {
   "use strict";
+  // Friendly check for the most common upload mistake (a missing or misnamed file).
+  if (typeof CONFIG === "undefined" || typeof sprite === "undefined") {
+    document.body.innerHTML = '<p style="font:22px monospace;padding:24px;color:#fff;background:#1a132d;margin:0;min-height:100vh">Wona OS could not start: config.js or sprites.js did not load. Check that all 5 files (index.html, style.css, config.js, sprites.js, script.js) are in the same folder, and that the names are exactly lowercase.</p>';
+    return;
+  }
   const C = CONFIG;
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => document.querySelectorAll(s);
@@ -166,7 +171,7 @@
   function showUpdatePopup() {
     showPopup({
       title: "wona_update.exe", icon: "computer",
-      html: `<h1 class="center">Wona ${C.age}.0</h1><p class="center dim">A new version is available.<br>Estimated time: one more year.</p>`,
+      html: `<h1 class="center">Wona OS ${C.age}.0</h1><p class="center dim">A new version is available.<br>Estimated time: one more year.</p>`,
       buttons: [["Later", refuseDelay], ["Update", startExploring, "pink"]],
       closable: true, onClose: startExploring          // the × works too
     });
@@ -206,7 +211,7 @@
       buttons: [["Delete all", tryDelete, "danger"], ["Keep forever", keepMemories, "pink"]]
     });
     const draw = () => {
-      $("#pile-hint").textContent = `Tap the photos to flip through (${order[0] + 1}/${order.length})`;
+      $("#pile-hint").textContent = `Check them out. Tap the photos to flip through (${order[0] + 1}/${order.length})`;
       $("#pile").innerHTML = order.slice().reverse().map((i, k, all) => {
         const m = C.memories[i], onTop = k === all.length - 1;
         const photo = m.image ? `<img src="${m.image}" alt="${m.title}">` : "📷<br>YOUR PHOTO";
