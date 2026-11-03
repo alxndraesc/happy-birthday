@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a132d">
+  <title>Wona 23.0 Update is Waiting...</title>
+  <meta name="description" content="Your update awaits... or tap for the surprise. Updates can't be delayed, and neither can birthdays.">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- LINK PREVIEW (what shows when you send the link in a chat) -->
+  <!-- TODO: replace https://YOUR-SITE-URL with your real address (no trailing slash). Image URLs must be full links. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wona 23.0">
+  <meta property="og:title" content="Wona 23.0 is ready to install">
+  <meta property="og:description" content="Your update awaits... Like your birthday, this update can't be delayed.">
+  <meta property="og:url" content="https://YOUR-SITE-URL/">
+  <meta property="og:image" content="https://YOUR-SITE-URL/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A pixel-art Wona 23.0 update popup with Later and Update buttons">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wona 23.0 is ready to install">
+  <meta name="twitter:description" content="Your update awaits... Like your birthday, this update can't be delayed.">
+  <meta name="twitter:image" content="https://YOUR-SITE-URL/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="sprites.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="phone">
+    <div class="desk" id="desk">
+      <div class="cloud" style="top:3%;left:50%"></div>
+      <div class="home">
+        <div class="widgets" id="widgets"></div>
+        <div class="icons" id="icons"></div>
+        <p class="hint">Stuck? Press the power button below to restart.</p>
+      </div>
+    </div>
+    <div class="appscreen is-hidden" id="app"></div>
+    <div class="taskbar">
+      <button class="start" id="start"></button>
+      <div class="task" id="task"></div>
+      <div class="tray"><span id="tray-icon"></span><span id="clock">9:41 AM</span></div>
+      <button class="power" id="power" aria-label="Power: restart"></button>
+    </div>
+    <div class="veil" id="veil"></div>
+    <div id="layer"></div>
+    <div class="balloon is-hidden" id="balloon" role="button" tabindex="0"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</body>
+</html>
