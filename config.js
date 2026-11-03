@@ -65,7 +65,7 @@ const CONFIG = {
   // An icon labeled "Messages" opens the Messages app instead of a little window.
   desktopIcons: [
     ["computer", "Wona 22.0",          "Wona 22.0 is outdated. Update Now."],
-    ["camera",   "Instagram",        "You were tagged in 230 posts."],
+    ["camera",   "Instagram",        "11 tagged stories. 06 drafts. 26 unread messages."],
     ["cd",       "Spotify",          "Spotify wrapped, Most Played Artist: Taylor Swift."],
     ["globe",    "Internet",         "Currently on explore and discovery mode"],
     ["clock",    "Late.exe",         "Late.exe has stopped responding (as usual)."],
@@ -82,7 +82,7 @@ const CONFIG = {
     { title: "",   image: "images/memo3.jpg" },
     { title: "",   image: "images/memo4.jpg" },
     { title: "",   image: "images/memo5.jpg" },
-    { title: "", image: "images/memo6.jpg" }    // TODO
+    { title: "", image: "images/memo6.png" }    // TODO
   ],
 
   /* ---------- 8. MESSAGES APP ---------- */
@@ -117,8 +117,8 @@ const CONFIG = {
       messages: [                                              // TODO: real inside jokes
         { from: "janna", text: "huy, mus ma dagat" },
         { from: "you",   text: "oo, dagat naman kita" },
-        { from: "janna", text: "go akooo" },
-        { from: "you", text: "hahaha, hain na si jona" },
+        { from: "janna", text: "go na kita?" },
+        { from: "you", text: "hahaha, hain na si jona?" },
         { from: "you", text: "jonaaa" },
         { from: "you", text: "online ba?" },
         { from: "janna", text: "bebe time naman ada." }

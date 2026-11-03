@@ -211,7 +211,7 @@
       buttons: [["Delete all", tryDelete, "danger"], ["Keep forever", keepMemories, "pink"]]
     });
     const draw = () => {
-      $("#pile-hint").textContent = `Check them out. Tap the photos to flip through (${order[0] + 1}/${order.length})`;
+      $("#pile-hint").textContent = `Tap the photos to flip through (${order[0] + 1}/${order.length})`;
       $("#pile").innerHTML = order.slice().reverse().map((i, k, all) => {
         const m = C.memories[i], onTop = k === all.length - 1;
         const photo = m.image ? `<img src="${m.image}" alt="${m.title}">` : "📷<br>YOUR PHOTO";
