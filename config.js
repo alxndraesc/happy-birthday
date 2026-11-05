@@ -46,8 +46,8 @@ const CONFIG = {
   // Optional per song: start: 53, end: 110 (seconds) to play only a clip.
   songs: [
     { title: "New Romantics",      artist: "Taylor Swift", src: "audio/New_Romantics.mp3" },
-    {title: "Bejeweled", artist: "Taylor Swift",     src: "audio/Bejeweled.mp3" }, // TODO: e.g. "audio/dorothea.mp3"
-    { title: "dorothea", artist: "Taylor Swift",     src: "audio/dorothea.mp3" }  // TODO
+    { title: "dorothea", artist: "Taylor Swift",     src: "audio/dorothea.mp3" },
+    { title: "Bejeweled", artist: "Taylor Swift",     src: "audio/Bejeweled.mp3" }
   ],
 
   /* ---------- 5. REMINDERS WIDGET ---------- */
@@ -109,7 +109,8 @@ const CONFIG = {
         { from: "wona",  text: "baka malelate ako.." },
         { from: "janna", text: "ahhhh oki" },
         { from: "janna", text: "sige" },
-        { from: "wona", text: "sorry naaa.." }
+        { from: "wona", text: "sorry naaa.." },
+        { from: "wona", text: "basta makada ako" }
       ]
     },
     {
@@ -121,7 +122,8 @@ const CONFIG = {
         { from: "you", text: "hahaha, hain na si jona?" },
         { from: "you", text: "jonaaa" },
         { from: "you", text: "online ba?" },
-        { from: "janna", text: "bebe time naman ada." }
+        { from: "janna", text: "bebe time naman ada." },
+        { from: "jona", text: "nasa work pa ako!" }
       ]
     }
   ],
